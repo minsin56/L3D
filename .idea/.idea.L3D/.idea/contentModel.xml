@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Dev\C++\L3D\L3D" t="IncludeFlat">
+      <e p="Debug" t="ExcludeRecursive" />
+      <e p="L3D" t="IncludeRecursive">
+        <e p="Debug" t="ExcludeRecursive" />
+        <e p="L3D.vcxproj" t="IncludeRecursive" />
+        <e p="src" t="Include">
+          <e p="Framework" t="Include">
+            <e p="Graphics.cpp" t="Include" />
+            <e p="Graphics.h" t="Include" />
+            <e p="Screen.cpp" t="Include" />
+            <e p="Screen.h" t="Include" />
+          </e>
+          <e p="L3D.cpp" t="Include" />
+          <e p="LuaFunctions.cpp" t="Include" />
+          <e p="LuaFunctions.h" t="Include" />
+          <e p="LuaScript.cpp" t="Include" />
+          <e p="LuaScript.h" t="Include" />
+          <e p="Math" t="Include">
+            <e p="Color.cpp" t="Include" />
+            <e p="Color.h" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="L3D.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\vincent\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\vincent\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_L3D.4116.00" t="ExcludeRecursive" />
+  </component>
+</project>
