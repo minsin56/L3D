@@ -2,14 +2,10 @@ function BeginDraw()
     Graphics:ClearColor(0.5,1,0.5,1)
 end
 
-Vertices = VertexArray();
-
-Vertices:Add(glm.vec3(-0.5,-0.5,0))
-Vertices:Add(glm.vec3(0,0.5,0))
-Vertices:Add(glm.vec3(0.5,-0.5,0))
-
 function Draw()
-    Graphics.BeginTriangles();
-    Graphics.DrawVertexArraySlow(Vertices)
-    Graphics.EndTriangles();
+    Graphics.BeginTriangles()
+    Graphics.Vertex2(-0.5,-1)
+    Graphics.Vertex2(0,0.3);
+    Graphics.Vertex2(0.5,-0.5)
+    Graphics.EndTriangles()
 end

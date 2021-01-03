@@ -15,12 +15,17 @@ void Screen::Init(int Width, int Height)
 
     if(!Window)
     {
-
         Close();
         return;
     }
 
+    
     glfwMakeContextCurrent(Window);
+
+    glewExperimental = GL_TRUE;
+    glewInit();
+
+
 }
 
 void Screen::Close()

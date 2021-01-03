@@ -10,6 +10,8 @@
           <e p="Framework" t="Include">
             <e p="Graphics.cpp" t="Include" />
             <e p="Graphics.h" t="Include" />
+            <e p="Mesh.cpp" t="Include" />
+            <e p="Mesh.h" t="Include" />
             <e p="Screen.cpp" t="Include" />
             <e p="Screen.h" t="Include" />
             <e p="Utils" t="Include">

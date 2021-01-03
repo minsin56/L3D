@@ -2,7 +2,8 @@
 #include <glm/glm.hpp>
 
 
-#include "glfw/glfw3.h"
+
+#include "Mesh.h"
 #include "Utils/VertexArray.h"
 
 void Graphics::ClearColor(lua_State* L)
@@ -43,6 +44,13 @@ void Graphics::DrawVertexArraySlow(VertexArray* Array)
    }
 }
 
+void Graphics::DrawMesh(Mesh* Mesh)
+{
+    glBindVertexArray(Mesh->VAO);
+    glDrawArrays(GL_TRIANGLES,0,3);
+}
+
+
 void Graphics::RegisterToLua(lua_State* L)
 {
     luabridge::getGlobalNamespace(L).beginClass<Graphics>("Graphics").
@@ -51,6 +59,7 @@ void Graphics::RegisterToLua(lua_State* L)
     addStaticFunction("Vertex2",Vertex2).
     addStaticFunction("Vertex3",Vertex3).
     addStaticFunction("DrawVertexArraySlow",DrawVertexArraySlow).
+    addStaticFunction("DrawMesh",DrawMesh).
     addStaticFunction("EndTriangles",EndTriangles).
     endClass();
 
@@ -83,4 +92,5 @@ void Graphics::RegisterToLua(lua_State* L)
     endClass().
     endNamespace();
 
+    Mesh::RegisterToLua(L);
 }

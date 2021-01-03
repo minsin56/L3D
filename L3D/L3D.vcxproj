@@ -100,7 +100,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw.lib;opengl32.lib;lua53.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw.lib;opengl32.lib;lua53.lib;glew32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -220,6 +220,7 @@
       <AdditionalIncludeDirectories>C:\Dev\C++\L3D\L3D\/include</AdditionalIncludeDirectories>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\Framework\Mesh.cpp" />
     <ClCompile Include="src\Framework\Screen.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -350,6 +351,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Framework\Graphics.h" />
+    <ClInclude Include="src\Framework\Mesh.h" />
     <ClInclude Include="src\Framework\Screen.h" />
     <ClInclude Include="src\Framework\Utils\VertexArray.h" />
     <ClInclude Include="src\LuaFunctions.h" />

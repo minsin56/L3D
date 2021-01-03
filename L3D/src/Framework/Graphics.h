@@ -1,7 +1,11 @@
 ﻿#pragma once
 #include <glm/vec2.hpp>
 
+
+#include "Mesh.h"
 #include "Utils/VertexArray.h"
+#include "gl/glew.h"
+#include "glfw/glfw3.h"
 
 extern "C" {
 # include "lua/lua.h"
@@ -38,6 +42,7 @@ public:
     static void Vertex2(lua_State* L);
     static void Vertex3(lua_State* L);
     static void DrawVertexArraySlow(VertexArray* Array);
+    static void DrawMesh(Mesh* Mesh);
 
     static int GetWidth();
     static int GetHeight();
