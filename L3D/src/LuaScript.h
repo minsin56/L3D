@@ -1,7 +1,12 @@
 ﻿#pragma once
 #include <string>
 
-#include "Lua/lua.hpp"
+extern "C" {
+# include "lua/lua.h"
+# include "lua/lauxlib.h"
+# include "lua/lualib.h"
+}
+
 #include "LuaBridge/LuaBridge.h"
 class LuaScript
 {

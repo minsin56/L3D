@@ -30,7 +30,7 @@
 #pragma once
 
 #include <cassert>
-
+#include <lua/lauxlib.h>
 namespace luabridge {
 
 // These are for Lua versions prior to 5.2.0.

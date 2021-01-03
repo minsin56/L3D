@@ -12,6 +12,10 @@
             <e p="Graphics.h" t="Include" />
             <e p="Screen.cpp" t="Include" />
             <e p="Screen.h" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="VertexArray.cpp" t="Include" />
+              <e p="VertexArray.h" t="Include" />
+            </e>
           </e>
           <e p="L3D.cpp" t="Include" />
           <e p="LuaFunctions.cpp" t="Include" />

@@ -1,10 +1,9 @@
 ﻿#include "Graphics.h"
 #include <glm/glm.hpp>
-#include <LuaBridge/LuaBridge.h>
-#include <LuaBridge/detail/LuaRef.h>
 
 
 #include "glfw/glfw3.h"
+#include "Utils/VertexArray.h"
 
 void Graphics::ClearColor(lua_State* L)
 {
@@ -31,9 +30,17 @@ void Graphics::Vertex3(lua_State* L)
     glVertex3d((double)lua_tonumber(L,1),(double)lua_tonumber(L,2),(double)lua_tonumber(L,3));
 }
 
-void Graphics::Vertex2Array(lua_State* L)
+void Graphics::DrawVertexArraySlow(VertexArray* Array)
 {
-    
+   if(Array)
+   {
+       for(int i = 0;i < Array->Items.size(); i++)
+       {
+           glm::vec3 Pos = Array->Items[i];
+
+           glVertex3d(Pos.x,Pos.y,Pos.z);
+       }
+   }
 }
 
 void Graphics::RegisterToLua(lua_State* L)
@@ -43,7 +50,7 @@ void Graphics::RegisterToLua(lua_State* L)
     addStaticFunction("BeginTriangles",BeginTriangles).
     addStaticFunction("Vertex2",Vertex2).
     addStaticFunction("Vertex3",Vertex3).
-    addStaticFunction("Vertex2Array",Vertex2Array).
+    addStaticFunction("DrawVertexArraySlow",DrawVertexArraySlow).
     addStaticFunction("EndTriangles",EndTriangles).
     endClass();
 

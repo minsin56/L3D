@@ -3,6 +3,7 @@
 
 #include "Framework/Graphics.h"
 #include "LuaFunctions.h"
+#include "Framework/Utils/VertexArray.h"
 
 LuaScript::LuaScript(std::string Path)
 {
@@ -11,7 +12,7 @@ LuaScript::LuaScript(std::string Path)
 
     
     Graphics::RegisterToLua(L);
-    
+    VertexArray::Register(L);
     luaL_dofile(L,Path.c_str());
 }
 

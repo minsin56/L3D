@@ -4,16 +4,60 @@
     <projectFile>L3D/L3D.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4d818d8-7b49-4b55-86a5-95008563254d" name="Default Changelist" comment="" />
+    <list default="true" id="b4d818d8-7b49-4b55-86a5-95008563254d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/L3D/src/Framework/Utils/VertexArray.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L3D/src/Framework/Utils/VertexArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.L3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.L3D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.L3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.L3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Game/Main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Game/Main.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/L3D.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/L3D.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/L3D.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/L3D.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/L3D.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/L3D.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/Graphics.obj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/Graphics.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/L3D.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/LuaFunctions.obj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/LuaFunctions.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/LuaScript.obj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/LuaScript.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/Screen.obj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/Screen.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/vc142.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Debug/vc142.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/Game/Init.lua" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/Game/Init.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/L3D.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/L3D.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/Framework/Graphics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/Framework/Graphics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/Framework/Graphics.h" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/Framework/Graphics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/Framework/Screen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/Framework/Screen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/L3D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/L3D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/LuaFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/LuaFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/LuaScript.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/LuaScript.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/src/LuaScript.h" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/src/LuaScript.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/x64/Debug/L3D.obj" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/x64/Debug/L3D.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/x64/Debug/L3D.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/x64/Debug/L3D.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/x64/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/x64/Debug/vc142.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3D/x64/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/L3D/x64/Debug/vc142.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LuaBridge/detail/LuaHelpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/LuaBridge/detail/LuaHelpers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LuaBridge/detail/Namespace.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/LuaBridge/detail/Namespace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LuaBridge/detail/Userdata.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/LuaBridge/detail/Userdata.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/Userdata.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/lua/lauxlib.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/Constructor.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/gl/GL.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/LuaHelpers.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/LuaException.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/Namespace.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/include/LuaBridge/detail/Stack.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -24,23 +68,31 @@
       <option value="$PROJECT_DIR$/L3D/src/Math/Color.cpp" />
       <option value="$PROJECT_DIR$/L3D/src/LuaBridge/LuaBridge.h" />
       <option value="$PROJECT_DIR$/L3D/src/LuaBridge/detail/CFunctions.h" />
-      <option value="$PROJECT_DIR$/L3D/src/LuaFunctions.h" />
       <option value="$PROJECT_DIR$/L3D/src/LuaFunctions.cpp" />
       <option value="$PROJECT_DIR$/L3D/src/Graphics.h" />
       <option value="$PROJECT_DIR$/L3D/src/Graphics.cpp" />
       <option value="$PROJECT_DIR$/L3D/src/Screen.h" />
       <option value="$PROJECT_DIR$/L3D/src/Framework/Math/Vector2.h" />
       <option value="$PROJECT_DIR$/L3D/src/Framework/Math/Vector2.cpp" />
-      <option value="$PROJECT_DIR$/L3D/src/LuaScript.cpp" />
       <option value="$PROJECT_DIR$/L3D/src/Framework/Screen.h" />
-      <option value="$PROJECT_DIR$/L3D/src/Framework/Screen.cpp" />
-      <option value="$PROJECT_DIR$/L3D/src/Framework/Graphics.h" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Utils/Array.h" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Utils/Array.cpp" />
+      <option value="$PROJECT_DIR$/include/LuaBridge/detail/Userdata.h" />
+      <option value="$PROJECT_DIR$/include/LuaBridge/detail/LuaHelpers.h" />
+      <option value="$PROJECT_DIR$/include/LuaBridge/detail/Namespace.h" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Utils/VertexArray.h" />
       <option value="$PROJECT_DIR$/L3D/src/LuaScript.h" />
+      <option value="$PROJECT_DIR$/L3D/src/LuaFunctions.h" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Screen.cpp" />
       <option value="$PROJECT_DIR$/L3D/src/L3D.cpp" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Utils/VertexArray.cpp" />
+      <option value="$PROJECT_DIR$/L3D/src/LuaScript.cpp" />
+      <option value="$PROJECT_DIR$/L3D/src/Framework/Graphics.h" />
       <option value="$PROJECT_DIR$/L3D/src/Framework/Graphics.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mWIzuoofbvfi32jMJBHA0gfjyk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +109,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.L3D">
@@ -142,7 +195,8 @@
       <workItem from="1609603198278" duration="2187000" />
       <workItem from="1609606827351" duration="6311000" />
       <workItem from="1609614201570" duration="6988000" />
-      <workItem from="1609621219829" duration="1713000" />
+      <workItem from="1609621219829" duration="9804000" />
+      <workItem from="1609685969458" duration="2474000" />
     </task>
     <servers />
   </component>
@@ -151,6 +205,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

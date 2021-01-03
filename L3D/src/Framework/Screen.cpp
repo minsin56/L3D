@@ -1,5 +1,7 @@
 ﻿#include "Screen.h"
 
+#include <iostream>
+
 GLFWwindow* Screen::Window;
 
 void Screen::Init(int Width, int Height)
@@ -13,6 +15,7 @@ void Screen::Init(int Width, int Height)
 
     if(!Window)
     {
+
         Close();
         return;
     }

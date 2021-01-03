@@ -1,3 +1,2 @@
-function InitSize()
-    return Vector2(1280,720)
-end
+Width = 1280
+Height = 720

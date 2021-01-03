@@ -38,7 +38,7 @@
 
 #include <stdexcept>
 #include <string>
-
+#include "lua/lua.h"
 namespace luabridge {
 
 namespace detail {

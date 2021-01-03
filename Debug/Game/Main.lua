@@ -1,19 +1,15 @@
 function BeginDraw()
-    Graphics.ClearColor( 0.196078, 0.6, 0.8)
+    Graphics:ClearColor(0.5,1,0.5,1)
 end
 
-Pos1 = glm.vec2(0.5,-0.5)
-Pos2 = glm.vec2(0,0.5)
-Pos3 = glm.vec2(0.5,0.5)
+Vertices = VertexArray();
 
-Vertices = {
-    Pos1,
-    Pos2,
-    Pos3
-}
+Vertices:Add(glm.vec3(-0.5,-0.5,0))
+Vertices:Add(glm.vec3(0,0.5,0))
+Vertices:Add(glm.vec3(0.5,-0.5,0))
 
 function Draw()
     Graphics.BeginTriangles();
-    Graphics.Vertex2Array(Vertices)
+    Graphics.DrawVertexArraySlow(Vertices)
     Graphics.EndTriangles();
 end

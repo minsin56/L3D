@@ -5,7 +5,7 @@
 
 #include "LuaScript.h"
 #include "Framework/Screen.h"
-#include "Lua/lua.hpp"
+//#include "Lua/lua.hpp"
 
 int main(int argc, char* argv[])
 {

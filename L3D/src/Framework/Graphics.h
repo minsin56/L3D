@@ -1,7 +1,15 @@
 ﻿#pragma once
 #include <glm/vec2.hpp>
 
-#include "lua/lua.hpp"
+#include "Utils/VertexArray.h"
+
+extern "C" {
+# include "lua/lua.h"
+# include "lua/lauxlib.h"
+# include "lua/lualib.h"
+}
+
+#include "LuaBridge/LuaBridge.h"
 
 
 
@@ -29,7 +37,7 @@ public:
     static void EndTriangles(lua_State* L);
     static void Vertex2(lua_State* L);
     static void Vertex3(lua_State* L);
-    static void Vertex2Array(lua_State* L);
+    static void DrawVertexArraySlow(VertexArray* Array);
 
     static int GetWidth();
     static int GetHeight();
