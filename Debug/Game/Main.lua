@@ -1,11 +1,25 @@
+Tri = Mesh()
+
+Tri:AddVertex(glm.vec3(-1,-1,0))
+Tri:AddVertex(glm.vec3(0.5,1,0))
+Tri:AddVertex(glm.vec3(1,-1,0))
+
+Tri:AddIndex(0)
+Tri:AddIndex(1)
+Tri:AddIndex(2)
+
+Tri:Create()
+
+MainShader = Shader()
+
+MainShader:Create()
+
 function BeginDraw()
-    Graphics:ClearColor(0.5,1,0.5,1)
+    Graphics.ClearColor(0.5,1,0.5,1)
 end
 
 function Draw()
-    Graphics.BeginTriangles()
-    Graphics.Vertex2(-0.5,-1)
-    Graphics.Vertex2(0,0.3);
-    Graphics.Vertex2(0.5,-0.5)
-    Graphics.EndTriangles()
+    MainShader:Bind()
+    Graphics.DrawMesh(Tri)
+    MainShader:UnBind()
 end

@@ -4,6 +4,7 @@
 
 
 #include "Mesh.h"
+#include "Shader.h"
 #include "Utils/VertexArray.h"
 
 void Graphics::ClearColor(lua_State* L)
@@ -47,20 +48,23 @@ void Graphics::DrawVertexArraySlow(VertexArray* Array)
 void Graphics::DrawMesh(Mesh* Mesh)
 {
     glBindVertexArray(Mesh->VAO);
-    glDrawArrays(GL_TRIANGLES,0,3);
+    glEnableVertexAttribArray(0);
+    glDrawElements(GL_TRIANGLES,Mesh->Indices.size(),GL_UNSIGNED_INT,0);
+    glBindVertexArray(0);
+
 }
 
 
 void Graphics::RegisterToLua(lua_State* L)
 {
     luabridge::getGlobalNamespace(L).beginClass<Graphics>("Graphics").
-    addStaticFunction("ClearColor",ClearColor).
-    addStaticFunction("BeginTriangles",BeginTriangles).
-    addStaticFunction("Vertex2",Vertex2).
-    addStaticFunction("Vertex3",Vertex3).
-    addStaticFunction("DrawVertexArraySlow",DrawVertexArraySlow).
-    addStaticFunction("DrawMesh",DrawMesh).
-    addStaticFunction("EndTriangles",EndTriangles).
+    addStaticFunction("ClearColor",&ClearColor).
+    addStaticFunction("BeginTriangles",&BeginTriangles).
+    addStaticFunction("Vertex2",&Vertex2).
+    addStaticFunction("Vertex3",&Vertex3).
+    addStaticFunction("DrawVertexArraySlow",&DrawVertexArraySlow).
+    addStaticFunction("DrawMesh",&DrawMesh).
+    addStaticFunction("EndTriangles",&EndTriangles).
     endClass();
 
     // Vector Types
@@ -93,4 +97,5 @@ void Graphics::RegisterToLua(lua_State* L)
     endNamespace();
 
     Mesh::RegisterToLua(L);
+    Shader::RegisterToLua(L);
 }

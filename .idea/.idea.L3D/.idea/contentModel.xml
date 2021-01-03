@@ -14,6 +14,8 @@
             <e p="Mesh.h" t="Include" />
             <e p="Screen.cpp" t="Include" />
             <e p="Screen.h" t="Include" />
+            <e p="Shader.cpp" t="Include" />
+            <e p="Shader.h" t="Include" />
             <e p="Utils" t="Include">
               <e p="VertexArray.cpp" t="Include" />
               <e p="VertexArray.h" t="Include" />

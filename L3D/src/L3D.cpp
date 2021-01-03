@@ -5,24 +5,28 @@
 #include <GLFW/glfw3.h>
 
 #include "LuaScript.h"
+#include "Framework/Graphics.h"
+#include "Framework/Mesh.h"
 #include "Framework/Screen.h"
+#include "Framework/Shader.h"
 //#include "Lua/lua.hpp"
 
 int main(int argc, char* argv[])
 {
     LuaScript* InitScript = new LuaScript("Game/Init.lua");
    
-    Screen::Init(luabridge::getGlobal(InitScript->L,"Width").cast<int>(),luabridge::getGlobal(InitScript->L,"Height").cast<int>());
+    Screen::Init(luabridge::getGlobal(InitScript->L,"Width").cast<int>(),luabridge::getGlobal(InitScript->L,"Height").cast<int>(),
+        luabridge::getGlobal(InitScript->L,"Title").cast<std::string>().c_str());
     InitScript->Close();
     LuaScript* Script = new LuaScript("Game/Main.lua");
 
     while(!glfwWindowShouldClose(Screen::Window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
-        Script->CallFunction("BeginDraw");
         
+        Script->CallFunction("BeginDraw");
         Script->CallFunction("Draw");
-                
+        
         glfwSwapBuffers(Screen::Window);
         glfwPollEvents(); 
     }

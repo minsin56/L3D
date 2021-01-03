@@ -13,7 +13,7 @@ extern "C"{
 class Mesh
 {
 public:
-    VertexArray Vertices;
+    std::vector<glm::vec3> Vertices;
     std::vector<unsigned int> Indices;
 
     Mesh();

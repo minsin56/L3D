@@ -7,6 +7,6 @@ class Screen
 public:
     static GLFWwindow* Window;
 
-    static void Init(int Width,int Height);
+    static void Init(int Width,int Height, const char* Title = "L3D Game");
     static void Close();
 };
